@@ -90,8 +90,8 @@ Full options:
     eclaw: {
       enabled: true,
       apiKey: "your-eclaw-api-key",
-      apiBase: "https://eclawbot.com",      // optional; default shown
-      botName: "OpenClaw",                   // optional; default shown
+      apiBase: "https://eclawbot.com", // optional; default shown
+      botName: "OpenClaw", // optional; default shown
       webhookUrl: "https://your-gateway.example.com",
     },
   },
@@ -102,12 +102,12 @@ Full options:
 
 For the default account, all settings can be supplied via env vars:
 
-| Variable            | Description                              | Default                    |
-| ------------------- | ---------------------------------------- | -------------------------- |
-| `ECLAW_API_KEY`     | Bot API key (required)                   | —                          |
-| `ECLAW_WEBHOOK_URL` | Public base URL for webhook callbacks    | — (required)               |
-| `ECLAW_API_BASE`    | E-Claw backend base URL                  | `https://eclawbot.com`     |
-| `ECLAW_BOT_NAME`    | Display name for the bot entity          | `OpenClaw`                 |
+| Variable            | Description                           | Default                |
+| ------------------- | ------------------------------------- | ---------------------- |
+| `ECLAW_API_KEY`     | Bot API key (required)                | —                      |
+| `ECLAW_WEBHOOK_URL` | Public base URL for webhook callbacks | — (required)           |
+| `ECLAW_API_BASE`    | E-Claw backend base URL               | `https://eclawbot.com` |
+| `ECLAW_BOT_NAME`    | Display name for the bot entity       | `OpenClaw`             |
 
 Config values in `openclaw.json` override env vars.
 
@@ -145,7 +145,7 @@ Multiple E-Claw accounts (devices) are supported under
 {
   channels: {
     eclaw: {
-      apiBase: "https://eclawbot.com",   // shared default
+      apiBase: "https://eclawbot.com", // shared default
       accounts: {
         default: {
           apiKey: "key-device-a",
